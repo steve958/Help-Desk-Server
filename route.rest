@@ -1,0 +1,66 @@
+GET http://localhost:8080/api/users
+
+###
+
+GET http://localhost:8080/api/user/5zU35xIAojnOJ5ITNFBF
+
+###
+
+POST http://localhost:8080/api/user
+content-type: application/json
+
+{
+ "user_type": "client",
+ "username" : "zicatrta",
+ "password" : "zicatrta",
+ "first_name" : "Zica",
+ "last_name" : "Trta",
+ "email" : "zicatrta@gmail.com",
+ "phone" : "123456789"
+}
+
+###
+POST http://localhost:8080/api/usercp
+content-type: application/json
+
+{
+ "username": "zicatrta",
+ "user_company_projects":[
+    {
+        "company_4" : ["project_6","project_7"]
+    },
+    {
+        "company_5" : ["project_8"]
+    },
+    {
+        "company_6" : ["project_9", "project_10"]
+    }
+ ]
+}
+
+###
+POST http://localhost:8080/api/usercp
+content-type: application/json
+
+{
+ "username": "peratrta",
+ "user_company_projects":[
+    {
+        "company_1" : ["project_1","project_2"]
+    },
+    {
+        "company_2" : ["project_3"]
+    },
+    {
+        "company_3" : ["project_4", "project_5"]
+    }
+ ]
+}
+
+###
+GET http://localhost:8080/api/usercp/xNyHpaDCsAtoNPwyOk3E
+content-type: application/json
+
+###
+GET http://localhost:8080/api/usercp/rp2vFU0Ll62KRvjHJz81
+content-type: application/json
